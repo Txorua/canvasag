@@ -1,0 +1,31 @@
+name = Canvas AG
+description = Canvas Template based theme.
+core = 7.x
+
+;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;
+regions[content]        = 'Content'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+regions[sidebar_first]  = Sidebar First
+regions[sidebar_second]  = Sidebar Second
+
+;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = assets/css/bootstrap.css
+stylesheets[all][] = assets/css/style.css
+stylesheets[all][] = assets/css/dark.css
+stylesheets[all][] = assets/css/font-icons.css
+stylesheets[all][] = assets/css/animate.css
+stylesheets[all][] = assets/css/magnific-popup.css
+stylesheets[all][] = assets/css/responsive.css
+stylesheets[all][] = assets/css/custom.css
+
+;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;
+;scripts[] = assets/js/jquery.js
+scripts[] = assets/js/plugins.js

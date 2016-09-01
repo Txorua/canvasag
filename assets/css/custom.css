@@ -1,0 +1,27 @@
+#page-title {
+  background-image: url(/sites/default/files/portada-getaria.jpg);
+  width: 1192px;
+  height: 250px;
+  margin: auto auto 50px;
+  position: relative;
+  padding: 50px 0;
+  background-color: #494949;
+  border-bottom: 0px solid #EEE;
+  margin-bottom: 30px;
+}
+
+#primary-menu ul ul {
+  width: 300px;
+}
+
+#primary-menu li.leaf,
+#primary-menu li.expanded {
+  list-style: none;
+  list-style-image: none;
+}
+
+.item-list .pager .pager-item,
+.item-list .pager .pager-current,
+.item-list .pager .pager-ellipsis {
+  display: none;
+}
