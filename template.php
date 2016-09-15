@@ -48,10 +48,10 @@ function canvasag_menu_tree__primary($variables) {
 function canvasag_menu_tree__primary__mega_item($variables) {
   return $variables['tree'];
 }
-function canvasag_menu_link__menu_main_menu_2($variables) {
+function canvasag_menu_link__menu_menu_espanol_2($variables) {
   // Hardcoded! There must be a better way to achieve this.
   $element = $variables['element'];
-  $mega_menu_items = array(1179);
+  $mega_menu_items = array(1299);
   $sub_menu = '';
   $attributes = array();
   $href = '';
@@ -133,4 +133,11 @@ function canvasag_field__field_tags__noticia($variables) {
     $output=FALSE;
   }
   return $output;
+}
+
+// Simplenews block form
+function canvasag_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'simplenews_block_form_24') {
+    $form['submit']['#attributes'] = array('class' => array('btn', 'btn-danger'));
+  }
 }

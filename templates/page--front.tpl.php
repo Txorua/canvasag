@@ -112,6 +112,21 @@
   <footer id="footer" class="dark">
     <div class="container">
 
+    <!-- Footer Widgets
+         ================================== -->
+      <div class="footer-widgets-wrap clearfix">
+        <div class="col_one_third">
+          <?php print render($page['footer_col_1']); ?>
+        </div>
+
+        <div class="col_one_third">
+          <?php print render($page['footer_col_2']); ?>
+        </div>
+
+        <div class="col_one_third col_last">
+          <?php print render($page['footer_col_3']); ?>
+        </div>
+      </div>
     </div>
 
     <!-- Copyrights

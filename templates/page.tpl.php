@@ -20,33 +20,30 @@
                <a href="https://www.facebook.com/Getariako.Udala" title="Facebook" target="_blank" class="social-icon si-borderless si-small si-facebook" style="margin-top:8px;"><i class="icon-facebook"></i><i class="icon-facebook"></i></a>
                <li><a href="/es">CAS</a></li>
                <li><a href="/eu">EUS</a></li>
-               <li><a href="#">Login</a>
-
-<div class="top-link-section">
-<form id="top-login" role="form">
-<div class="input-group" id="top-login-username">
-<span class="input-group-addon"><i class="icon-user"></i></span>
-<input type="email" class="form-control" placeholder="Email" required>
-</div>
-<div class="input-group" id="top-login-password">
-<span class="input-group-addon"><i class="icon-key"></i></span>
-<input type="password" class="form-control" placeholder="Password" required>
-</div>
-<label class="checkbox">
-<input type="checkbox" value="remember-me"> Recordar Password
-</label>
-<button class="btn btn-danger btn-block" type="submit">Entrar</button>
-</form>
-</div>
-</li>
-</ul>
-</div><!-- .top-links end -->
-
- </div>
-
-</div>
-
-</div><!-- #top-bar end -->
+               <li>
+                 <a href="#">Login</a>
+                 <div class="top-link-section">
+                   <form id="top-login" role="form">
+                    <div class="input-group" id="top-login-username">
+                      <span class="input-group-addon"><i class="icon-user"></i></span>
+                      <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="input-group" id="top-login-password">
+                      <span class="input-group-addon"><i class="icon-key"></i></span>
+                      <input type="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <label class="checkbox">
+                      <input type="checkbox" value="remember-me"> Recordar Password
+                    </label>
+                  <button class="btn btn-danger btn-block" type="submit">Entrar</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div><!-- .top-links end -->
+      </div>
+    </div>
+  </div><!-- #top-bar end -->
 
   <!-- Header
   ============================================= -->
@@ -99,6 +96,21 @@
   <footer id="footer" class="dark">
     <div class="container">
 
+    <!-- Footer Widgets
+         ================================== -->
+      <div class="footer-widgets-wrap clearfix">
+        <div class="col_one_third">
+          <?php print render($page['footer_col_1']); ?>
+        </div>
+
+        <div class="col_one_third">
+          <?php print render($page['footer_col_2']); ?>
+        </div>
+
+        <div class="col_one_third col_last">
+          <?php print render($page['footer_col_3']); ?>
+        </div>
+      </div>
     </div>
 
     <!-- Copyrights
@@ -109,5 +121,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Go To Top
+  =============================================== -->
+  <div id="gotoTop" class="icon-angle-up"></div>
 
 </div>

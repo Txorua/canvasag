@@ -10,7 +10,10 @@ regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
 regions[sidebar_first]  = Sidebar First
-regions[sidebar_second]  = Sidebar Second
+regions[sidebar_second] = Sidebar Second
+regions[footer_col_1]   = Footer Column 1
+regions[footer_col_2]   = Footer Column 2
+regions[footer_col_3]   = Footer Column 3
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
