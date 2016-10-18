@@ -86,18 +86,18 @@
 
         <?php if ($messages): print $messages; endif; ?>
 
-        <!-- Sidebar
-        ============================================= -->
-        <?php print render($page['sidebar_first']); ?>
-
         <!-- Main Content
         ============================================= -->
-        <div class="postcontent bothsidebar nobottommargin clearfix">
+        <div class="postcontent bothsidebar nobottommargin clearfix col-sm-push-3">
           <h4 class="uppercase center bottommargin-lg"><?php print t('Wellcome to Getaria Council'); ?></h4>
           <div id="posts" class="small-thumbs alt">
             <?php print render($page['content']); ?>
           </div>
         </div>
+
+        <!-- Sidebar
+        ============================================= -->
+        <?php print render($page['sidebar_first']); ?>
 
         <!-- Sidebar
         ============================================= -->

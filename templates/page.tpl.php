@@ -92,7 +92,7 @@
 
       <!-- Main Content
       ============================================= -->
-      <div class="postcontent bothsidebar nobottommargin clearfix">
+      <div class="postcontent bothsidebar nobottommargin clearfix col-sm-push-3">
         <h4 class="uppercase center bottommargin-lg"><?php print $title; ?></h4>
         <div id="posts" class="small-thumbs alt">
           <?php if ($tabs): print render($tabs); endif;?>
