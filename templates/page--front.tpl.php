@@ -138,6 +138,16 @@
     ============================================= -->
     <div id="copyrights">
       <div class="container clearfix">
+        
+        <div class="col_half">Getariako Udala &copy; 2016 </div>
+
+        <div class="col_half col_last tright">
+        	<div class="fright clearfix">
+        		<div class="copyrights-menu copyright-links nobottommargin">
+        			<a href="#">Aviso Legal</a>/<a href="#">Privacidad</a>
+        		</div>
+        	</div>
+        </div>
 
       </div>
     </div>
