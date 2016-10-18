@@ -103,6 +103,61 @@ function canvasag_menu_link__menu_menu_espanol_2($variables) {
   return $output;
 }
 
+function canvasag_menu_link__menu_menu_euskera_2($variables) {
+  // Hardcoded! There must be a better way to achieve this.
+  $element = $variables['element'];
+  $mega_menu_items = array(1432);
+  $sub_menu = '';
+  $attributes = array();
+  $href = '';
+  $output = '';
+
+  if ($element['#href'] == '<front>' && drupal_is_front_page()) {
+    $element['#original_link']['in_active_trail'] = TRUE;
+  }
+
+  ($element['#href'] == '#') ? $href = NULL : $href = $element['#href'];
+
+  // Sub Menus
+  if ($element['#below']) {
+    if (in_array($element['#original_link']['mlid'], $mega_menu_items)) {
+      $element['#below']['#theme_wrappers'] = array('menu_tree__primary__mega_item');
+    }
+    $sub_menu = drupal_render($element['#below']);
+  }
+
+  $html = '<div>' . $element['#title'] . '</div>';
+  if ($href) {
+    $enlace = l($html, $element['#href'], array('html' => true, 'attributes' => $element['#localized_options']));
+  } else {
+    $enlace = l($html, '#', array('html' => true, 'attributes' => $element['#localized_options'], 'external' => TRUE));
+  }
+  $output =  '<li>' . $enlace . $sub_menu . '</li>';
+
+  if (in_array($element['#original_link']['mlid'], $mega_menu_items)) {
+    $attributes['class'] = array('mega-menu');
+    $sub_menu = '<div class="mega-menu-content style-2 col-3 clearfix">' . $sub_menu . '</div>';
+    if ($href) {
+      $enlace = l($html, $element['#href'], array('html' => true, 'attributes' => $element['#localized_options']));
+    } else {
+      $enlace = l($html, '#', array('html' => true, 'attributes' => $element['#localized_options'], 'external' => TRUE));
+    }
+    $output =  '<li' . drupal_attributes($attributes) .'>' . $enlace . $sub_menu . '</li>';
+  }
+
+  if (in_array($element['#original_link']['plid'], $mega_menu_items)) {
+    $attributes['class'] = array('mega-menu-title');
+    if ($href) {
+      $enlace = l($html, $element['#href'], array('html' => true, 'attributes' => $element['#localized_options']));
+    } else {
+      $enlace = l($html, '#', array('html' => true, 'attributes' => $element['#localized_options'], 'external' => TRUE));
+    }
+    $output =  '<ul><li' . drupal_attributes($attributes) .'>' . $enlace . $sub_menu . '</li></ul>';
+  }
+
+  return $output;
+}
+
 // Fields Noticia
 function canvasag_field__field_imagen__noticia($variables) {
   $output = '';

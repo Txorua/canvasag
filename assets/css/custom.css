@@ -25,3 +25,21 @@
 .item-list .pager .pager-ellipsis {
   display: none;
 }
+
+/* Custom hacks */
+body.stretched #header.full-header .container {
+  width: 1270px;
+  padding: 0 30px;
+}
+
+#header.full-header #logo {
+  border-right: 0px solid #EEE;
+}
+
+#header.full-header #primary-menu > ul {
+  border-right: 0px solid #EEE;
+}
+
+.view-clon-de-taxonomy-term > .view-content {
+  display: none;
+}

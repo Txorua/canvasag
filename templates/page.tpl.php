@@ -15,7 +15,7 @@
          <div class="col_half col_last fright nobottommargin">
          <!-- Top Links
            ============================================= -->
-           <div class="top-links">					
+           <div class="top-links">
              <ul>
                <a href="https://www.facebook.com/Getariako.Udala" title="Facebook" target="_blank" class="social-icon si-borderless si-small si-facebook" style="margin-top:8px;"><i class="icon-facebook"></i><i class="icon-facebook"></i></a>
                <li><a href="/es">CAS</a></li>
@@ -56,8 +56,8 @@
         <!-- Logo
         ============================================= -->
         <div id="logo">
-          <a href="/" class="standard-logo" data-dark-logo="<?php print $logo; ?>"><img src="<?php print $logo; ?>" alt="Canvas Logo"></a>
-          <a href="/" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+          <a href="/<?php print $language->language; ?>" class="standard-logo" data-dark-logo="<?php print $logo; ?>"><img src="<?php print $logo; ?>" alt="Canvas Logo"></a>
+          <a href="/<?php print $language->language; ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
         </div><!-- #logo end -->
 
         <nav id="primary-menu">
@@ -85,8 +85,25 @@
     <div class="content-wrap">
       <div class="container clearfix">
       <?php print $messages; ?>
-      <?php if ($tabs): print render($tabs); endif;?>
-      <?php print render($page['content']); ?>
+
+      <!-- Sidebar
+      ============================================= -->
+      <?php print render($page['sidebar_first']); ?>
+
+      <!-- Main Content
+      ============================================= -->
+      <div class="postcontent bothsidebar nobottommargin clearfix">
+        <h4 class="uppercase center bottommargin-lg"><?php print $title; ?></h4>
+        <div id="posts" class="small-thumbs alt">
+          <?php if ($tabs): print render($tabs); endif;?>
+          <?php print render($page['content']); ?>
+        </div>
+      </div>
+
+      <!-- Sidebar
+      ============================================= -->
+      <?php print render($page['sidebar_second']); ?>
+
       </div>
     </div>
   </section>
