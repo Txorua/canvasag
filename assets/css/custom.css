@@ -43,3 +43,9 @@ body.stretched #header.full-header .container {
 .view-clon-de-taxonomy-term > .view-content {
   display: none;
 }
+
+.btn-blue {
+	color: #ffffff;
+	background-color: #336699;
+	border-color: #003366;
+}
