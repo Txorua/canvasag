@@ -69,14 +69,19 @@
   </header>
 
   <!-- Page Title
-  ============================================= -->
+  =============================================
   <section id="page-title">
     <div class="container clearfix">
-      <h1></h1>
-      <span></span>
-          </div>
+      <h1><?php print $title; ?></h1>
+      <span><?php print $site_slogan; ?></span>
+      <?php print $breadcrumb; ?>
+    </div>
   </section>
+  -->
 
+  <div class="content-wrap" style="text-align:center; margin-bottom:70px; padding: 0; padding-top: 1px;">
+    <img src="/sites/default/files/portada-getariako-udala-heliworx.jpg">
+  </div>
 
   <?php //dsm($variables); ?>
   <!-- Site Content
@@ -85,10 +90,6 @@
     <div class="content-wrap">
       <div class="container clearfix">
       <?php print $messages; ?>
-
-      <!-- Sidebar
-      ============================================= -->
-      <?php print render($page['sidebar_first']); ?>
 
       <!-- Main Content
       ============================================= -->
@@ -99,6 +100,10 @@
           <?php print render($page['content']); ?>
         </div>
       </div>
+
+      <!-- Sidebar
+      ============================================= -->
+      <?php print render($page['sidebar_first']); ?>
 
       <!-- Sidebar
       ============================================= -->

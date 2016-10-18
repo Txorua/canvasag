@@ -69,7 +69,7 @@
   </header>
 
   <!-- Page Title
-  ============================================= -->
+  =============================================
   <section id="page-title">
     <div class="container clearfix">
       <h1><?php print $title; ?></h1>
@@ -77,6 +77,11 @@
       <?php print $breadcrumb; ?>
     </div>
   </section>
+  -->
+
+  <div class="content-wrap" style="text-align:center; margin-bottom:70px; padding: 0; padding-top: 1px;">
+    <img src="/sites/default/files/portada-getariako-udala-heliworx.jpg">
+  </div>
 
   <!-- Site Content
   ============================================= -->
