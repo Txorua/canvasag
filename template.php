@@ -14,6 +14,13 @@ function canvasag_preprocess_html(&$variables) {
     ));
 }
 
+function canvasag_js_alter(&$js) {
+  if(isset($js['//maps.googleapis.com/maps/api/js?sensor=false'])) {
+    $key = 'key=AIzaSyB0Wy9d1RP_Q0RISUMSNE7Nc6iOhtUz1MM';
+    $js['//maps.googleapis.com/maps/api/js?sensor=false']['data'] = '//maps.googleapis.com/maps/api/js?' . $key;
+  }
+}
+
 function canvasag_preprocess_page(&$variables) {
   if ($variables['node']) {
     $node = $variables['node'];
