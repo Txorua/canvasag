@@ -202,4 +202,70 @@ function canvasag_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'simplenews_block_form_24') {
     $form['submit']['#attributes'] = array('class' => array('btn', 'btn-danger'));
   }
+  if ($form_id == 'contact_site_form') {
+    $form['name'] = array(
+      '#title' => t('Name'),
+      '#type' => 'textfield',
+      '#attributes' => array(
+        'class' => array(
+          'sm-form-control',
+          'required',
+        ),
+        'id' => 'edit-name',
+        'name' => 'name',
+      ),
+      '#required' => TRUE,
+    );
+    $form['mail'] = array(
+      '#title' => t('Mail'),
+      '#type' => 'textfield',
+      '#attributes' => array(
+        'class' => array(
+          'sm-form-control',
+          'required',
+          'email',
+        ),
+        'id' => 'edit-mail',
+        'name' => 'mail',
+      ),
+      '#required' => TRUE,
+    );
+    $form['subject'] = array(
+      '#title' => t('Subject'),
+      '#type' => 'textfield',
+      '#required' => TRUE,
+      '#attributes' => array(
+        'class' => array(
+          'required',
+          'sm-form-control',
+        )
+      )
+    );
+    $form['message']['#attributes']['class'] = array(
+      'sm-form-control',
+      'required',
+    );
+
+    $form['actions']['submit']['#attributes'] = array(
+      'class' => array(
+        'button',
+        'button-small',
+        'button-3d',
+        'nomargin',
+      ),
+      'value' => t('Send message'),
+    );
+
+    $order = array(
+      'name',
+      'mail',
+      'subject',
+      'message',
+      'copy',
+      'submit',
+    );
+    foreach ($order as $key => $field) {
+      $form[$field]['#weight'] = $key;
+    }
+  }
 }

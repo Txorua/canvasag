@@ -20,25 +20,28 @@
             <a href="https://www.facebook.com/Getariako.Udala" title="Facebook" target="_blank" class="social-icon si-borderless si-small si-facebook" style="margin-top:8px;"><i class="icon-facebook"></i><i class="icon-facebook"></i></a>
             <li><a href="/es">CAS</a></li>
             <li><a href="/eu">EUS</a></li>
+            <?php global $user; if (!$user->uid): ?>
             <li>
               <a href="#">Login</a>
               <div class="top-link-section">
-                <form id="top-login" role="form">
-                  <div class="input-group" id="top-login-username">
-                    <span class="input-group-addon"><i class="icon-user"></i></span>
-                    <input type="email" class="form-control" placeholder="Email" required>
-                  </div>
-                  <div class="input-group" id="top-login-password">
-                    <span class="input-group-addon"><i class="icon-key"></i></span>
-                    <input type="password" class="form-control" placeholder="Password" required>
-                  </div>
-                  <label class="checkbox">
-                    <input type="checkbox" value="remember-me"> Recordar Password
-                  </label>
-                  <button class="btn btn-danger btn-block" type="submit">Entrar</button>
-                </form>
+
+                <form id="user-login-form" role="form" action="/<?php print $language->language; ?>/node?destination=node" method="post" accept-charset="UTF-8">
+                <div class="input-group" id="top-login-username">
+                  <span class="input-group-addon"><i class="icon-user"></i></span>
+                  <input id="edit-name" name="name" type="text" class="form-control" placeholder="User name" required>
+                </div>
+                <div class="input-group" id="top-login-password">
+                  <span class="input-group-addon"><i class="icon-key"></i></span>
+                  <input id="edit-pass" name="pass" type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <br/>
+                <input type="hidden" name="form_build_id" value="<?php print $variables['elements']['user_login']['#build_id']; ?>">
+                <input type="hidden" name="form_id" value="user_login_block">
+                <input id="edit-submit" name="op" class="btn btn-danger btn-block" type="submit" value="<?php print t('Login'); ?>">
+              </form>
               </div>
             </li>
+            <?php endif; ?>
           </ul>
         </div><!-- .top-links end -->
       </div>
@@ -93,7 +96,7 @@
 
         <!-- Main Content
         ============================================= -->
-        <div class="postcontent bothsidebar nobottommargin clearfix col-sm-push-3">
+        <div class="postcontent bothsidebar nobottommargin clearfix col-md-push-3">
           <h4 class="uppercase center bottommargin-lg"><?php print t('Wellcome to Getaria Council'); ?></h4>
           <div id="posts" class="small-thumbs alt">
             <?php print render($page['content']); ?>
@@ -102,6 +105,7 @@
 
         <!-- Sidebar
         ============================================= -->
+        <?php hide($page['sidebar_first']['user_login']); ?>
         <?php print render($page['sidebar_first']); ?>
 
         <!-- Sidebar
@@ -138,7 +142,7 @@
     ============================================= -->
     <div id="copyrights">
       <div class="container clearfix">
-        
+
         <div class="col_half">Getariako Udala &copy; 2016 </div>
 
         <div class="col_half col_last tright">
