@@ -213,6 +213,7 @@ function canvasag_form_alter(&$form, &$form_state, $form_id) {
         ),
         'id' => 'edit-name',
         'name' => 'name',
+        'placeholder' => t('Name'),
       ),
       '#required' => TRUE,
     );
@@ -227,6 +228,7 @@ function canvasag_form_alter(&$form, &$form_state, $form_id) {
         ),
         'id' => 'edit-mail',
         'name' => 'mail',
+        'placeholder' => t('Mail'),
       ),
       '#required' => TRUE,
     );
@@ -238,13 +240,15 @@ function canvasag_form_alter(&$form, &$form_state, $form_id) {
         'class' => array(
           'required',
           'sm-form-control',
-        )
+        ),
+        'placeholder' => t('Subject'),
       )
     );
     $form['message']['#attributes']['class'] = array(
       'sm-form-control',
       'required',
     );
+    $form['message']['#attributes']['placeholder'] = t('Message');
 
     $form['actions']['submit']['#attributes'] = array(
       'class' => array(

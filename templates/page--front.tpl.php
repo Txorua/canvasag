@@ -4,12 +4,12 @@
 
   <!-- Top Bar
   ============================================= -->
-  <div id="top-bar" class="hidden-xs">
+  <div id="top-bar">
     <div class="container clearfix">
-      <div class="col_half nobottommargin">
+      <div class="col_half nobottommargin hidden-xs">
         <p class="nobottommargin"><i class="icon-phone" style="padding-right:8px;"></i>+34 943 89 6024</p>
       </div>
-      <div class="col_half nobottommargin">
+      <div class="col_half nobottommargin hidden-xs">
         <p class="nobottommargin"><i class="icon-mail" style="padding-right:10px;"></i>udala@getaria.eus</p>
       </div>
       <div class="col_half col_last fright nobottommargin">
@@ -17,7 +17,7 @@
         ============================================= -->
         <div class="top-links">
           <ul>
-            <a href="https://www.facebook.com/Getariako.Udala" title="Facebook" target="_blank" class="social-icon si-borderless si-small si-facebook" style="margin-top:8px;"><i class="icon-facebook"></i><i class="icon-facebook"></i></a>
+            <a href="https://www.facebook.com/Getariako.Udala" title="Facebook" target="_blank" class="social-icon si-borderless si-small si-facebook hidden-xs" style="margin-top:8px;"><i class="icon-facebook"></i><i class="icon-facebook"></i></a>
             <li><a href="/es">CAS</a></li>
             <li><a href="/eu">EUS</a></li>
             <?php global $user; if (!$user->uid): ?>

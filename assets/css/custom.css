@@ -28,8 +28,8 @@
 
 /* Custom hacks */
 body.stretched #header.full-header .container {
-  width: 1270px;
-  padding: 0 30px;
+  /*width: 1270px;
+  padding: 0 30px;*/
 }
 
 #header.full-header #logo {
@@ -38,6 +38,9 @@ body.stretched #header.full-header .container {
 
 #header.full-header #primary-menu > ul {
   border-right: 0px solid #EEE;
+}
+.top-links ul li:first-child, .top-links ul ul li {
+	border-left: 0 !important;
 }
 
 .view-clon-de-taxonomy-term > .view-content {
@@ -48,4 +51,8 @@ body.stretched #header.full-header .container {
 	color: #ffffff;
 	background-color: #336699;
 	border-color: #003366;
+}
+
+.widget #contact-site-form label {
+  display: none;
 }
