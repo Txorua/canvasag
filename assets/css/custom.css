@@ -61,9 +61,9 @@ body.stretched #header.full-header .container {
   font-size: 28px;
 }
 
-body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
+body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover > a,
 body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
-body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
+body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover > a,
 body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a {
 	color: #AD9B17 !important;
 }
