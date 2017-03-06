@@ -56,3 +56,14 @@ body.stretched #header.full-header .container {
 .widget #contact-site-form label {
   display: none;
 }
+
+#primary-menu-trigger, #page-submenu-trigger {
+  font-size: 28px;
+}
+
+body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
+body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
+body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
+body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a {
+	color: #AD9B17 !important;
+}

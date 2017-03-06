@@ -10,7 +10,7 @@
         <p class="nobottommargin"><i class="icon-phone" style="padding-right:8px;"></i>+34 943 89 6024</p>
       </div>
       <div class="col_half nobottommargin hidden-xs">
-        <p class="nobottommargin"><i class="icon-mail" style="padding-right:10px;"></i>udala@getaria.eus</p>
+        <p class="nobottommargin"><i class="icon-mail" style="padding-right:10px;"></i><a href="mailto:udala@getaria.eus">udala@getaria.eus</a></p>
       </div>
       <div class="col_half col_last fright nobottommargin">
       <!-- Top Links
@@ -82,7 +82,7 @@
   </section>
   -->
 
-  <div class="content-wrap" style="text-align:center; margin-bottom:70px; padding: 0; padding-top: 1px;">
+  <div class="content-wrap" style="text-align:center; padding: 0; padding-top: 1px;">
     <img src="/sites/default/files/portada-getariako-udala-heliworx.jpg">
   </div>
 
