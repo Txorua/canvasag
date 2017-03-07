@@ -279,10 +279,11 @@ function canvasag_field__field_imagen__enlaces($variables) {
   $output = '';
 
     $path = file_create_url($variables['element']['#items'][0]['uri']);
-    $src = image_style_url('medium',$variables['element']['#items'][0]['uri']);
+    //$src = image_style_url('medium',$variables['element']['#items'][0]['uri']);
+    $src  = file_create_url($variables['element']['#items'][0]['uri']);
     $alt = $variables['element']['#items'][0]['alt'];
     $output .= '<div class="oc-item">';
-    $output .= '<a href="#">';
+    $output .= '<a href="' . $path . '">';
     $output .= '<img class="image_fade" src="' . $src . '" alt="' . $alt . '" typeof="foaf:Image">';
     $output .= '</a>';
     $output .= '</div>';
