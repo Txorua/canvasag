@@ -116,6 +116,12 @@
     </div>
   </section>
 
+ <section class="bottommargin">
+   <div class="container clearfix">
+     <?php print render($page["post_content"]); ?>
+   </div>
+ </section>
+
   <!-- Footer
   ============================================= -->
   <footer id="footer" class="dark">

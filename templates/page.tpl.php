@@ -117,6 +117,66 @@
     </div>
   </section>
 
+  <section class="bottommargin">
+    <div class="container clearfix">
+      <div class="fancy-title title-center title-dotted-border">
+        <h3>Image Carousel</h3>
+      </div>
+
+      <div id="oc-images" class="owl-carousel image-carousel">
+
+        <div class="oc-item">
+          <a href="#"><img src="http://fillmurray.com/400/300" alt="Image 1"></a>
+        </div>
+        <div class="oc-item">
+          <a href="#"><img src="http://fillmurray.com/400/300" alt="Image 2"></a>
+        </div>
+        <div class="oc-item">
+          <a href="#"><img src="http://fillmurray.com/400/300" alt="Image 3"></a>
+        </div>
+        <div class="oc-item">
+          <a href="#"><img src="http://fillmurray.com/400/300" alt="Image 4"></a>
+        </div>
+        <div class="oc-item">
+          <a href="#"><img src="http://fillmurray.com/400/300" alt="Image 5"></a>
+        </div>
+        <div class="oc-item">
+          <a href="#"><img src="http://fillmurray.com/400/300" alt="Image 6"></a>
+        </div>
+        <div class="oc-item">
+          <a href="#"><img src="http://fillmurray.com/400/300" alt="Image 7"></a>
+        </div>
+
+      </div>
+
+      <script type="text/javascript">
+
+        jQuery(document).ready(function($) {
+
+          var ocImages = $("#oc-images");
+
+          ocImages.owlCarousel({
+            margin: 20,
+            nav: true,
+            navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+            autoplay: false,
+            autoplayHoverPause: true,
+            dots: false,
+            navRewind: false,
+            responsive:{
+              0:{ items:2 },
+              600:{ items:3 },
+              1000:{ items:4 },
+              1200:{ items:5 }
+            }
+          });
+
+        });
+
+      </script>
+    </div>
+  </section>
+
   <!-- Footer
   ============================================= -->
   <footer id="footer" class="dark">
