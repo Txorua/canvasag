@@ -96,7 +96,7 @@
 
       <!-- Main Content
       ============================================= -->
-      <div class="postcontent bothsidebar nobottommargin clearfix col-md-push-3">
+      <div class="postcontent nobottommargin clearfix col_last">
         <h4 class="uppercase center bottommargin-lg"><?php print $title; ?></h4>
         <div id="posts" class="small-thumbs alt">
           <?php if ($tabs): print render($tabs); endif;?>
@@ -111,7 +111,7 @@
 
       <!-- Sidebar
       ============================================= -->
-      <?php print render($page['sidebar_second']); ?>
+      <?php //print render($page['sidebar_second']); ?>
 
       </div>
     </div>
