@@ -67,3 +67,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a {
 	color: #AD9B17 !important;
 }
+
+.entry-image img {
+  width: 80%;
+}
