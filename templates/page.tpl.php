@@ -82,7 +82,7 @@
   </section>
   -->
 
-  <div class="content-wrap" style="text-align:center; margin-bottom:70px; padding: 0; padding-top: 1px;">
+  <div class="content-wrap" style="text-align:center; padding: 0; padding-top: 1px;">
     <img src="/sites/default/files/portada-getariako-udala-heliworx.jpg">
   </div>
 
