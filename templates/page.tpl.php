@@ -7,7 +7,7 @@
      <div id="top-bar" class="hidden-xs">
        <div class="container clearfix">
          <div class="col_half nobottommargin hidden-xs">
-           <p class="nobottommargin"><i class="icon-phone" style="padding-right:8px;"></i>+34 943 89 6024</p>
+           <p class="nobottommargin"><i class="icon-phone" style="padding-right:8px;"></i>+34 943 89 60 24</p>
          </div>
          <div class="col_half nobottommargin hidden-xs">
            <p class="nobottommargin"><i class="icon-mail" style="padding-right:10px;"></i><a href="mailto:udala@getaria.eus">udala@getaria.eus</a></p>
