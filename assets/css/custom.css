@@ -71,3 +71,9 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 .entry-image img {
   width: 80%;
 }
+
+.owl-carousel .owl-item img {
+	display: block;
+	width: auto;
+	-webkit-transform-style: preserve-3d;
+}
