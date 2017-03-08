@@ -61,7 +61,7 @@
         <div id="logo">
           <a href="/<?php print $language->language; ?>" class="standard-logo hidden-xxs hidden-xs hidden-sm" data-dark-logo="<?php print $logo; ?>"><img src="<?php print $logo; ?>" alt="Getariako Udala"></a>
           <?php $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL)); ?>
-          <a href="/<?php print $language->language; ?>" class="standard-logo hidden-md hidden-lg" data-dark-logo="<?php print $theme_path; ?>/logox160.png"><img src="<?php print $theme_path; ?>/logox160.png" alt="Getariako Udala"></a>
+          <a href="/<?php print $language->language; ?>" class="standard-logo hidden-md hidden-lg" data-dark-logo="/<?php print $theme_path; ?>/logox160.png"><img src="/<?php print $theme_path; ?>/logox160.png" alt="Getariako Udala"></a>
           <a href="/<?php print $language->language; ?>" class="retina-logo" data-dark-logo="<?php print $logo; ?>"><img src="<?php print $logo; ?>" alt="Getariako Udala"></a>
         </div><!-- #logo end -->
 
