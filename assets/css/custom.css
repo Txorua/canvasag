@@ -78,6 +78,14 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   height: auto;
 }
 
-.device-xxs #primary-menu-trigger {
-  margin-left: -30px;
+.device-md #logo img {
+    height: 70px;
+    margin: 15px 0;
+}
+
+.device-md #primary-menu ul li a {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+    letter-spacing: 0;
 }
