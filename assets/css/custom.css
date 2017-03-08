@@ -77,3 +77,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   max-width: 100%;
   height: auto;
 }
+
+.device-xxs #primary-menu-trigger {
+  margin-left: -30px;
+}
