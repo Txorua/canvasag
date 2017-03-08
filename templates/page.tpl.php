@@ -98,7 +98,7 @@
       ============================================= -->
       <div class="postcontent nobottommargin clearfix col_last">
         <h4 class="uppercase center bottommargin-lg"><?php print $title; ?></h4>
-        <div id="posts" class="small-thumbs alt">
+        <div id="posts" class="alt">
           <?php if ($tabs): print render($tabs); endif;?>
           <?php print render($page['content']); ?>
         </div>
