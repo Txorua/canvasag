@@ -1,6 +1,6 @@
 <?php if ($teaser): ?>
 <div class="entry clearfix">
-  <div class="entry-image hidden-xss hidden-xs hidden-sm">
+  <div class="entry-image hidden-xxs hidden-xs hidden-sm">
     <?php print render($content['field_imagen']); ?>
   </div>
   <div class="entry-c">
@@ -11,7 +11,7 @@
       <li><i class="icon-calendar3"></i> <?php print date('d M Y',$node->created); ?></li>
       <?php print render($content['field_tags']); ?>
     </ul>
-    <div class="entry-image visible-xss visible-xs visible-sm">
+    <div class="entry-image visible-xxs visible-xs visible-sm">
       <?php print render($content['field_imagen']); ?>
     </div>
     <div class="entry-content">
