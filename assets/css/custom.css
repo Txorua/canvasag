@@ -91,5 +91,5 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 }
 
 .device-xxs #primary-menu-trigger {
-  /**margin-left: -30px;*/
+  margin-left: -30px;
 }
