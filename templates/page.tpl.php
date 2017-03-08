@@ -59,7 +59,7 @@
         <!-- Logo
         ============================================= -->
         <div id="logo">
-          <a href="/<?php print $language->language; ?>" class="standard-logo hidden-xxs hidden-xs hidden-sm" data-dark-logo="<?php print $logo; ?>"><img src="<?php print $logo; ?>" alt="Getariako Udala"></a>
+          <a href="/<?php print $language->language; ?>" class="standard-logo" data-dark-logo="<?php print $logo; ?>"><img src="<?php print $logo; ?>" alt="Getariako Udala"></a>
           <a href="/<?php print $language->language; ?>" class="retina-logo" data-dark-logo="<?php print $logo; ?>"><img src="<?php print $logo; ?>" alt="Canvas Logo"></a>
         </div><!-- #logo end -->
 
