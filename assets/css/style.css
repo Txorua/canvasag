@@ -4925,7 +4925,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 .entry-image img {
 	display: block;
 	position: relative;
-	width: 100%;
+	width: 80%;
 	height: auto;
 }
 
@@ -13144,4 +13144,3 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-
