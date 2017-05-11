@@ -96,7 +96,7 @@
 
         <!-- Main Content
         ============================================= -->
-        <div class="postcontent nobottommargin clearfix col_last">
+        <div class="postcontent nobottommargin clearfix">
           <h4 class="uppercase center bottommargin-lg"><?php print t('Wellcome to Getaria Council'); ?></h4>
           <div id="posts" class="small-thumbs alt">
             <?php print render($page['content']); ?>
