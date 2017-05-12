@@ -82,9 +82,11 @@
   </section>
   -->
 
+<!--
   <div class="content-wrap" style="text-align:center; padding: 0; padding-top: 1px;">
     <img src="/sites/default/files/portada-getariako-udala-heliworx.jpg">
   </div>
+-->
 
   <!-- Site Content
   ============================================= -->
@@ -97,6 +99,7 @@
         <!-- Main Content
         ============================================= -->
         <div class="postcontent nobottommargin clearfix">
+          <?php print render($page['before_content']); ?>
           <h4 class="uppercase center bottommargin-lg"><?php print t('Wellcome to Getaria Council'); ?></h4>
           <div id="posts" class="small-thumbs alt">
             <?php print render($page['content']); ?>

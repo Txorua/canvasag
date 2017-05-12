@@ -11,6 +11,7 @@ regions[page_bottom]    = 'Page bottom'
 
 regions[sidebar_first]  = Sidebar First
 regions[sidebar_second] = Sidebar Second
+regions[before_content] = Before Content
 regions[post_content]   = Post Content
 regions[footer_col_1]   = Footer Column 1
 regions[footer_col_2]   = Footer Column 2
