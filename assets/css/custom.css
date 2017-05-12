@@ -65,6 +65,9 @@ body.stretched #header.full-header .container {
   color: red;
   margin-left: 1rem;
 }
+#contact-site-form #edit-copy {
+  display: none;
+}
 
 
 #primary-menu-trigger, #page-submenu-trigger {
