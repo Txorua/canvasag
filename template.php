@@ -245,6 +245,17 @@ function canvasag_form_alter(&$form, &$form_state, $form_id) {
         'placeholder' => t('Subject'),
       )
     );
+    $form['legal'] = array(
+      '#title' => t('I\'ve read and accept the !term services.', array('!term services' => l(t('term services'),'node'))),
+      '#type' => 'checkbox',
+      '#required' => TRUE,
+      '#attributes' => array(
+        'class' => array(
+          'required',
+          'sm-form-control',
+        ),
+      )
+    );
     $form['message']['#attributes']['class'] = array(
       'sm-form-control',
       'required',
@@ -266,7 +277,7 @@ function canvasag_form_alter(&$form, &$form_state, $form_id) {
       'mail',
       'subject',
       'message',
-      'copy',
+      'legal',
       'submit',
     );
     foreach ($order as $key => $field) {

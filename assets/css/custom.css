@@ -56,6 +56,15 @@ body.stretched #header.full-header .container {
 .widget #contact-site-form label {
   display: none;
 }
+.widget #contact-site-form #edit-legal {
+  width: auto;
+  display: inline;
+}
+.widget #contact-site-form #edit-legal + label {
+  display: inline;
+  color: red;
+}
+
 
 #primary-menu-trigger, #page-submenu-trigger {
   font-size: 28px;
