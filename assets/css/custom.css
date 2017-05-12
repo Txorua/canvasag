@@ -108,3 +108,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
     height: 66px;
     margin: 17px 0;
 }
+
+.region-before-content {
+  margin-bottom: 30px;
+}
