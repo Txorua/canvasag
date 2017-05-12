@@ -1,3 +1,4 @@
+<?php $node = node_load($nid) ?>
 <?php if ($teaser): ?>
 <div class="entry clearfix">
   <div class="entry-image hidden-xxs hidden-xs hidden-sm">
@@ -24,5 +25,10 @@
 </div>
 <?php endif; ?>
 <?php if ($view_mode == 'full'): ?>
+  <?php if (isset($body[0]['summary']) && !empty($body[0]['summary'])): ?>
+    <?php $body = field_get_items('node', $node, 'body'); ?>
+    <?php $teaser = field_view_value('node', $node, 'body', $body[0],'teaser'); ?>
+    <?php print render($teaser); ?>
+  <?php endif; ?>
   <?php print render($content); ?>
 <?php endif; ?>
