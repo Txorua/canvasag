@@ -38,9 +38,16 @@
 
 <article>
   <?php
-      $uri = $row->field_field_imagen_slide[0]['raw']['uri'];
+      //dsm($row);
+      $uri = $row->field_field_imagen_slider[0]['raw']['uri'];
       //$src = image_style_url('large', $uri);
       $src = file_create_url($uri);
   ?>
-  <img src="<?php print $src; ?>" class="img-responsive banner" typeof="foaf:Image">
+  <div style="position: relative">
+    <img src="<?php print $src; ?>" class="img-responsive banner" typeof="foaf:Image">
+    <div style="position:absolute; width:100%;min-height: 33%;bottom: 0; background-color: #0009; color:white; padding: 1em;">
+      <div><?php print $row->node_title; ?></div>
+      <div><?php print $row->field_body[0]['rendered']['#markup']; ?></div>
+    </div>
+  </div>
 </article>

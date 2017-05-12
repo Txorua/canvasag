@@ -8,14 +8,7 @@
  */
 ?>
 
-<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <?php foreach ($rows as $id => $row): ?>
-    <li data-target="#slider-carousel" data-slide-to="<?php print $id; ?>" class="<?php if ($id == 0) print "active"; ?>"></li>
-    <?php endforeach; ?>
-  </ol>
-
+<div id="slider-carousel" class="carousel slide hidden-xs" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
   <?php foreach ($rows as $id => $row): ?>
     <div class="item <?php if ($id == 0) print "active"; ?>">
@@ -24,4 +17,13 @@
   <?php endforeach; ?>
   </div>
 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#slider-carousel" role="button" data-slide="prev">
+    <span class="icon-chevron-left icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#slider-carousel" role="button" data-slide="next">
+    <span class="icon-chevron-right icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
