@@ -271,6 +271,7 @@ function canvasag_form_alter(&$form, &$form_state, $form_id) {
       ),
       'value' => t('Send message'),
     );
+    $form['copy']['#access'] = FALSE;
 
     $order = array(
       'name',
