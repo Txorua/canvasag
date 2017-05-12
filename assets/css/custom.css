@@ -63,6 +63,7 @@ body.stretched #header.full-header .container {
 .widget #contact-site-form #edit-legal + label {
   display: inline;
   color: red;
+  margin-left: 1rem;
 }
 
 
