@@ -155,7 +155,7 @@
         <div class="col_half col_last tright">
         	<div class="fright clearfix">
         		<div class="copyrights-menu copyright-links nobottommargin">
-        			<a href="#">Aviso Legal</a>/<a href="#">Privacidad</a>
+        			<a href="#">Aviso Legal</a>
         		</div>
         	</div>
         </div>
