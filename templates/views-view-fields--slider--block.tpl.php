@@ -49,7 +49,7 @@
     <a href="<?php print $path ?>">
       <img src="<?php print $src; ?>" class="img-responsive banner" typeof="foaf:Image">
     </a>
-    <div style="position:absolute; width:100%;min-height: 33%;bottom: 0; background-color: #0009; color:white; padding: 1em;">
+    <div style="position:absolute; width:100%;min-height: 33%;bottom: 0; background-color: rgba(0,0,0,0.8); color:white; padding: 1em;">
       <div><a href="<?php print $path ?>"><?php print $row->node_title; ?></a></div>
       <div><?php print $row->field_body[0]['rendered']['#markup']; ?></div>
     </div>
