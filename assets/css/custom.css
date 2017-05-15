@@ -87,6 +87,10 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   height: auto;
 }
 
+#slider-carousel a {
+  color: white;
+}
+
 .device-md #logo img {
     height: 70px;
     margin: 15px 0;

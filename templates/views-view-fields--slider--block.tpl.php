@@ -39,14 +39,18 @@
 <article>
   <?php
       //dsm($row);
+      global $language;
       $uri = $row->field_field_imagen_slider[0]['raw']['uri'];
       //$src = image_style_url('large', $uri);
       $src = file_create_url($uri);
+      $path = '/' . $language->language . '/' . drupal_get_path_alias($row->field_field_imagen_slider[0]['rendered']['#path']['path'], $language->language);
   ?>
   <div style="position: relative">
-    <img src="<?php print $src; ?>" class="img-responsive banner" typeof="foaf:Image">
+    <a href="<?php print $path ?>">
+      <img src="<?php print $src; ?>" class="img-responsive banner" typeof="foaf:Image">
+    </a>
     <div style="position:absolute; width:100%;min-height: 33%;bottom: 0; background-color: #0009; color:white; padding: 1em;">
-      <div><?php print $row->node_title; ?></div>
+      <div><a href="<?php print $path ?>"><?php print $row->node_title; ?></a></div>
       <div><?php print $row->field_body[0]['rendered']['#markup']; ?></div>
     </div>
   </div>
