@@ -91,6 +91,20 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   color: white;
 }
 
+#slider-carousel .carousel-inner .slide-item {
+  position: relative;
+}
+
+#slider-carousel .carousel-inner .overlay-item {
+  position: absolute;
+  width:100%;
+  min-height: 33%;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+  padding: 1em;
+}
+
 .device-md #logo img {
     height: 70px;
     margin: 15px 0;

@@ -45,11 +45,11 @@
       $src = file_create_url($uri);
       $path = '/' . $language->language . '/' . drupal_get_path_alias($row->field_field_imagen_slider[0]['rendered']['#path']['path'], $language->language);
   ?>
-  <div style="position: relative">
+  <div class="slide-item">
     <a href="<?php print $path ?>">
       <img src="<?php print $src; ?>" class="img-responsive banner" typeof="foaf:Image">
     </a>
-    <div style="position:absolute; width:100%;min-height: 33%;bottom: 0; background-color: rgba(0,0,0,0.8); color:white; padding: 1em;">
+    <div class="overlay-item">
       <div><a href="<?php print $path ?>"><?php print $row->node_title; ?></a></div>
       <div><?php print $row->field_body[0]['rendered']['#markup']; ?></div>
     </div>
