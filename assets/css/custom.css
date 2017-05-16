@@ -35,6 +35,10 @@ body.stretched #header.full-header .container {
 #header.full-header #logo {
   border-right: 0px solid #EEE;
 }
+#header.full-header #logo img {
+  padding-bottom: 1px;
+}
+
 
 #header.full-header #primary-menu > ul {
   border-right: 0px solid #EEE;
