@@ -28,6 +28,20 @@ function canvasag_preprocess_page(&$variables) {
     $variables['theme_hook_suggestions'][] = $suggestion;
   }
 
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
+    $term = taxonomy_term_load(arg(2));
+    $vocab = $term->vocabulary_machine_name;
+    $variables['theme_hook_suggestions'][] = 'page__' . $vocab;
+
+    if ($vocab == 'departamentos') {
+      $imagen = field_get_items('taxonomy_term',$term, 'field_imagen');
+      $path = file_create_url($imagen[0]['uri']);
+      $variables['imagen_departamento'] = $path;
+      //dsm($term->description);
+      $variables['departamento_descripcion'] = $term->description;
+    }
+  }
+
   // Primary Nav
   $variables['primary_nav'] = FALSE;
   if ($variables['main_menu']) {

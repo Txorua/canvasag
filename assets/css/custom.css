@@ -1,4 +1,4 @@
-#page-title {
+/*#page-title {
   background-image: url(/sites/default/files/portada-getaria.jpg);
   width: 1192px;
   height: 250px;
@@ -8,7 +8,7 @@
   background-color: #494949;
   border-bottom: 0px solid #EEE;
   margin-bottom: 30px;
-}
+}*/
 
 #primary-menu ul ul {
   width: 300px;
@@ -43,9 +43,36 @@ body.stretched #header.full-header .container {
 	border-left: 0 !important;
 }
 
+/**
+ * Departamentos
+ */
+ .view-departamentos.view-display-id-block_1 .view-content {
+   border: solid 1px #AD9B17;
+   border-bottom: none;
+ }
+ .view-departamentos.view-display-id-block_1 .views-field {
+   border-bottom: solid 1px #AD9B17;
+   padding: 1em;
+ }
+ .view-departamentos.view-display-id-block_1 .views-field .views-label {
+   /*font-size: 1.25em;*/
+   text-transform: uppercase;
+   color: #AD9B17;
+ }
 .view-clon-de-taxonomy-term > .view-content {
+  /*display: none;*/
+}
+.view-clon-de-taxonomy-term.view-display-id-page .view-header {
+  /*border: solid 1px black;*/
+}
+
+.view-clon-de-taxonomy-term.view-display-id-page_1 .view-header {
+  /*border: solid 1px black;*/
+}
+.view-clon-de-taxonomy-term.view-display-id-page_1 .view-header img {
   display: none;
 }
+.view-clon-de-taxonomy-term.view-display-id-page_1 .view-content {}
 
 .btn-blue {
 	color: #ffffff;
