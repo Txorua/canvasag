@@ -55,7 +55,7 @@ function canvasag_preprocess_node(&$variables) {
   $node_url = drupal_get_path_alias('node/' . $node->nid);
   //dsm($node);
   // More link
-  $variables['more-link'] = l(t('Read more'), $node_url, array('attributes' => array('title' => $variables['title'], 'class' => array('more-link'))));
+  $variables['more-link'] = l(t('Read more'), $node_url, array('attributes' => array('title' => $variables['title'], 'class' => array('more-link','button','button-mini'))));
 }
 
 // Menú
