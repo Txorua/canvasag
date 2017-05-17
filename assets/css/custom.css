@@ -160,3 +160,12 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 .region-before-content {
   margin-bottom: 30px;
 }
+
+/**
+ * Calendario
+ */
+ .view-calendario.view-display-id-block_1 .date-prev {
+   right: auto;
+   left: 0px;
+   margin-left: 0;
+ }
