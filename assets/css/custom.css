@@ -164,7 +164,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 /**
  * Calendario
  */
- .view-calendario.view-display-id-block_1 .date-prev {
+ .view-calendario.view-id-calendario .date-prev {
    right: auto;
    left: 0px;
    margin-left: 0;
