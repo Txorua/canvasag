@@ -48,6 +48,12 @@ function canvasag_preprocess_page(&$variables) {
     $variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
     $variables['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
   }
+
+  // legal
+  $menu_legal = menu_tree('menu-legal');
+  $variables['menu_legal'] = $menu_legal;
+  $variables['menu_legal']['#theme_wrappers'] = array('menu_tree__legal');
+  //dsm($variables);
 }
 
 function canvasag_preprocess_node(&$variables) {
@@ -176,6 +182,20 @@ function canvasag_menu_link__menu_menu_euskera_2($variables) {
     $output =  '<ul><li' . drupal_attributes($attributes) .'>' . $enlace . $sub_menu . '</li></ul>';
   }
 
+  return $output;
+}
+
+function canvasag_menu_tree__legal($variables) {
+  $links = explode('*',$variables['tree']);
+  array_pop($links);
+  return implode(' | ', $links);
+}
+function canvasag_menu_link__menu_legal($variables) {
+  global $language;
+  $output = '';
+  $element = $variables['element'];
+  $href = '/' . $language->language . '/' . drupal_get_path_alias($element['#href'], $language->language);
+  $output = '<a href="' . $href . '">' . $element['#title'] . '</a>*';
   return $output;
 }
 
