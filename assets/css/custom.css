@@ -50,33 +50,39 @@ body.stretched #header.full-header .container {
 /**
  * Departamentos
  */
- .view-departamentos.view-display-id-block_1 .view-content {
+ .view-clon-de-taxonomy-term .view-header .view {
+   margin-bottom: 1em;
+ }
+ .view-clon-de-taxonomy-term .view-header .view .view-header {
+   text-transform: uppercase;
+   padding: 15px;
+   color: white;
+   background-color: #AD9B17;
+   text-align: center;
+   letter-spacing: 5px;
+ }
+ .view-clon-de-taxonomy-term .view-header .view .view-header p {
+   margin: auto;
+   font-size: 1em;
+ }
+ .view-clon-de-taxonomy-term .view-header .view .view-content {
    border: solid 1px #AD9B17;
    border-bottom: none;
  }
- .view-departamentos.view-display-id-block_1 .views-field {
+ .view-clon-de-taxonomy-term .view-header .view .views-field {
    border-bottom: solid 1px #AD9B17;
    padding: 1em;
  }
- .view-departamentos.view-display-id-block_1 .views-field .views-label {
-   /*font-size: 1.25em;*/
-   text-transform: uppercase;
-   color: #AD9B17;
- }
-.view-clon-de-taxonomy-term > .view-content {
-  /*display: none;*/
-}
-.view-clon-de-taxonomy-term.view-display-id-page .view-header {
-  /*border: solid 1px black;*/
-}
+ .view-clon-de-taxonomy-term .view-header .view .views-row {
 
-.view-clon-de-taxonomy-term.view-display-id-page_1 .view-header {
-  /*border: solid 1px black;*/
-}
-.view-clon-de-taxonomy-term.view-display-id-page_1 .view-header img {
-  display: none;
-}
-.view-clon-de-taxonomy-term.view-display-id-page_1 .view-content {}
+ }
+ .view-clon-de-taxonomy-term .view-header .view .views-field .views-label {
+   color: #AD9B17;
+   text-transform: uppercase;
+ }
+/**
+ * Fin Departamentos
+ */
 
 .btn-blue {
 	color: #ffffff;

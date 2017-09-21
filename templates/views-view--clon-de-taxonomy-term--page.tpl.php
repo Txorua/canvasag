@@ -26,7 +26,6 @@
  *
  * @ingroup views_templates
  */
- //dsm($variables);
 ?>
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
@@ -34,10 +33,11 @@
     <?php print $title; ?>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
-  <div class="view-header col_one_third">
-    <?php print $header; ?>
-  </div>
+  <?php if ($header): ?>
+    <div class="view-header col_one_third">
+      <?php print $header; ?>
+    </div>
+  <?php endif; ?>
 
   <?php if ($exposed): ?>
     <div class="view-filters">
@@ -51,12 +51,15 @@
     </div>
   <?php endif; ?>
 
-  <div class="view-content col_two_third col_last">
-    <?php
-      $term = taxonomy_term_load($view->args[0]);
-      print $term->description;
-    ?>
-  </div>
+  <?php if ($rows): ?>
+    <div class="view-content col_two_third col_last">
+      <?php print $rows; ?>
+    </div>
+  <?php elseif ($empty): ?>
+    <div class="view-empty">
+      <?php print $empty; ?>
+    </div>
+  <?php endif; ?>
 
   <?php if ($pager): ?>
     <?php print $pager; ?>
