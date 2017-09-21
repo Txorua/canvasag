@@ -137,7 +137,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   width:100%;
   min-height: 33%;
   bottom: 0;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.4);
   color:white;
   padding: 1em;
 }
