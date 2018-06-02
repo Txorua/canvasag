@@ -98,8 +98,8 @@
 
         <!-- Main Content
         ============================================= -->
+        <?php print render($page['before_content']); ?>
         <div class="postcontent nobottommargin clearfix">
-          <?php print render($page['before_content']); ?>
           <h4 class="uppercase center bottommargin-lg"><?php print t('Wellcome to Getaria Council'); ?></h4>
           <div id="posts" class="small-thumbs alt">
             <?php print render($page['content']); ?>
