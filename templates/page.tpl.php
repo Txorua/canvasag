@@ -96,7 +96,7 @@
 
       <!-- Main Content
       ============================================= -->
-      <div class="postcontent nobottommargin clearfix">
+      <div class="nobottommargin clearfix">
         <h4 class="uppercase center bottommargin-lg"><?php print $title; ?></h4>
         <div id="posts" class="small-thumbs alt">
           <?php if ($tabs): print render($tabs); endif;?>
@@ -107,7 +107,7 @@
       <!-- Sidebar
       ============================================= -->
       <?php hide($page['sidebar_first']['user_login']); ?>
-      <?php print render($page['sidebar_first']); ?>
+      <?php //print render($page['sidebar_first']); ?>
 
       <!-- Sidebar
       ============================================= -->
